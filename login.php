@@ -1,6 +1,6 @@
 <?php
 session_start();
-$page_title = "Monitor login | Gear Out";
+$page_title = "Manger login | RUGBY GEAR";
 include('includes/header.php');
 include('includes/nav.php');
 ?>
@@ -8,7 +8,7 @@ include('includes/nav.php');
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <h2 class="pt-5">Monitor login</h2>
+            <h2 class="pt-5">Manager login</h2>
             <?php if (isset($_GET['error'])): ?>
                 <div class="alert alert-danger" role="alert">
                     <?php if ($_GET['error'] === 'invalid_credentials'): ?>
@@ -31,9 +31,9 @@ include('includes/nav.php');
                     <button type="submit" class="btn btn-primary" name="login_btn">Log in</button>
                 </div>
             </form>
-            <p class="text-muted">Demo account: monitor@school.nz / password123</p>
+            <p class="text-muted">Manager account:</p>
         </div>
-        <div class="col-sm-3"></div>
+        <div class="col-sm-3">manager@gmail.com</div>
     </div>
 </div>
 <?php include('includes/footer.php'); ?>

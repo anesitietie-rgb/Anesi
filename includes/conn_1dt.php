@@ -3,8 +3,8 @@
 // Named to match the class template convention (conn_1dt.php),
 // but built with PDO + prepared statements throughout the rest of the site.
 $host = 'db';
-$dbname = 'RUGBY GEAR';
-$user = 'root';
+$dbname = 'rugby_loans';
+$user = 'Manager';
 $pass = 'example';
 $charset = 'utf8mb4';
 

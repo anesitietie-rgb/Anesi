@@ -3,12 +3,12 @@ session_start();
 require('includes/auth_check.php');
 require('includes/conn_1dt.php');
 
-$page_title = "Manage loans | Gear Out";
+$page_title = "Manage loans | RUGBY GEAR";
 
 // Join to monitors so we can show who logged each loan.
 $stmt = $pdo->query(
-    "SELECT loans.*, monitors.firstname AS logged_by_name
-     FROM loans
+        "SELECT loans.*, monitors.firstname AS logged_by_name
+        FROM loans
      LEFT JOIN monitors ON loans.logged_by = monitors.id
      ORDER BY (returned_date IS NULL) DESC, due_back ASC"
 );

@@ -22,10 +22,10 @@ include('includes/nav.php');
         </p>
         <h3 class="pt-4">What it does</h3>
         <ul>
-            <li>Lets a signed-in monitor log a loan — item, borrower, and due-back date</li>
-            <li>Shows anyone, monitor or staff, a live public list of what's currently out</li>
+            <li>Lets a signed-in manager log a loan — item, borrower, and due-back date</li>
+            <li>Shows anyone, manager or coaches, a live public list of what's currently out</li>
             <li>Flags anything overdue</li>
-            <li>Lets a monitor mark gear as returned, or correct a mistaken entry</li>
+            <li>Lets a manager mark gear as returned, or correct a mistaken entry</li>
         </ul>
     </div>
 </div>
