@@ -1,15 +1,15 @@
 
   <div class="card text-center">
   <div class="card-header">
-    Featured
+    Images
   </div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
+    <h5 class="card-title">GEAR</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">View more photos</a>
   </div>
   <div class="card-footer text-body-secondary">
-    2 days ago
+    Open now!
   </div>
 </div>
   

@@ -11,16 +11,16 @@ if (isset($_POST['login_btn'])) {
         exit;
     }
 
-    $stmt = $pdo->prepare("SELECT * FROM monitors WHERE email = :email");
+    $stmt = $pdo->prepare("SELECT * FROM manager WHERE email = :email");
     $stmt->execute([':email' => $email]);
-    $monitor = $stmt->fetch();
+    $manager = $stmt->fetch();
 
     // password_verify checks the submitted password against the hash
     // stored in the database — the plain password is never stored or compared directly.
-    if ($monitor && password_verify($pwd, $monitor['password'])) {
-        $_SESSION['id']        = $monitor['id'];
-        $_SESSION['firstname'] = $monitor['firstname'];
-        $_SESSION['lastname']  = $monitor['lastname'];
+    if ($manager && password_verify($pwd, $manager['password'])) {
+        $_SESSION['id']        = $manager['id'];
+        $_SESSION['firstname'] = $manager['firstname'];
+        $_SESSION['lastname']  = $manager['lastname'];
         header('Location: ../control_panel.php');
         exit;
     }

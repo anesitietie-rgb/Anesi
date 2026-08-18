@@ -1,24 +1,24 @@
 <?php
 session_start();
-$page_title = "How it works | Gear Out";
+$page_title = "RUGBY GeAR | RUGBY GEAR";
 include('includes/header.php');
 include('includes/nav.php');
 ?>
 <!-- Start of content 1 -->
-<div class="container pt-5">
+<div class="container pt-2">
     <div class="row">
-        <h1 class="text-center">How Gear Out works</h1>
+        <h1 class="text-center">RUGBY GEAR</h1>
         <hr />
-        <h3 class="pt-5">The problem</h3>
+        <h3 class="pt-5">HOW IS RUGBY GEAR HELPPING</h3>
         <p>
-            The PE department currently tracks lunchtime sports gear on a paper sign-out sheet taped to the
-            equipment shed window. It's hard to read, sheets go missing at the end of term, and nobody can
-            tell at a glance what's still out or who's had it longest.
+            There was a school that had a great rugby team known as Mafana College. This school has seems to lose
+            there gears every year due to people talking them and forgetting to returned it. RUGBY GEAR has helped
+            track the gears and who borrowed them, which made it much easier for the manager to track them.
         </p>
-        <h3 class="pt-4">Who it's for</h3>
+        <h3 class="pt-4">WHO IS IT FOR</h3>
         <p>
-            Student sports monitors issue and return gear at the shed window each lunchtime. PE staff need to
-            check what's outstanding without walking to the shed.
+            The manager will be using this app to track people using gears. The manager will also be remeinding  
+            them their due-dates and return_dates.
         </p>
         <h3 class="pt-4">What it does</h3>
         <ul>

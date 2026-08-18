@@ -1,7 +1,7 @@
 -- RUGBY GEAR — database schema
 -- Run this once against your 'RUGBY GEAR' database before using the app.
 
-CREATE TABLE IF NOT EXISTS Manager (
+CREATE TABLE IF NOT EXISTS loans (
     id                  INT AUTO_INCREMENT PRIMARY KEY,
     rugby_gears_name    VARCHAR(50)  NOT NULL,
     borrower_name       VARCHAR(50)  NOT NULL,
@@ -10,13 +10,12 @@ CREATE TABLE IF NOT EXISTS Manager (
     notes               VARCHAR(100)
 );
 
-CREATE TABLE IF NOT EXISTS loans (
+CREATE TABLE IF NOT EXISTS coach (
     id              INT AUTO_INCREMENT PRIMARY KEY,
     coach_name      VARCHAR(50)  NOT NULL,
     coach_email     VARCHAR(50)  NOT NULL,
-    birth_date      DATE(50)     NOT NULL,
     phone_number    INT(50)      NOT NULL,
-    coach_height    INT              NULL,      
+    coach_height    INT(10)              NULL,      
     notes           VARCHAR(200)     NULL,
     logged_by       INT              NULL,      
     FOREIGN KEY (logged_by) REFERENCES Manager(id)
