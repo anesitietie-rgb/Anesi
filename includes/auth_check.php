@@ -7,4 +7,8 @@
 if (!isset($_SESSION['id'])) {
     header('Location: login.php');
     exit;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> dac6550cea7f9ca330b8ff5639c084f57c0426dd

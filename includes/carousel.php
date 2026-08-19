@@ -23,4 +23,8 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> dac6550cea7f9ca330b8ff5639c084f57c0426dd

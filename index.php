@@ -5,7 +5,10 @@ $page_title = "RUGBY GEAR| Home";
 // Call files
 include('includes/header.php');
 include('includes/nav.php');
+<<<<<<< HEAD
 include('includes/carousel.php');
+=======
+>>>>>>> dac6550cea7f9ca330b8ff5639c084f57c0426dd
 ?>
 <!-- Start of content 1 -->
 <div class="container text-center pt-5">
@@ -34,7 +37,11 @@ include('includes/carousel.php');
                 <div class="card-body d-flex flex-column">
                     <i class="fa-solid fa-list-check fa-3x mb-3"></i>
                     <h5 class="card-title">What is available</h5>
+<<<<<<< HEAD
                     <p class="card-text">GEAR LIST.</p>
+=======
+                    <p class="card-text">GEAR list.</p>
+>>>>>>> dac6550cea7f9ca330b8ff5639c084f57c0426dd
                     <a class="mt-auto" href="view_loans.php"><button type="button" class="btn btn-danger btn-lg">View loans</button></a>
                 </div>
             </div>
