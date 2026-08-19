@@ -5,9 +5,9 @@ CREATE TABLE IF NOT EXISTS loans (
     id                  INT AUTO_INCREMENT PRIMARY KEY,
     rugby_gears_name    VARCHAR(50)  NOT NULL,
     borrower_name       VARCHAR(50)  NOT NULL,
-    borrow_date         DATE
+    Borrow_date         DATE
     due_back            DATE
-    notes               VARCHAR(100)
+    NOTES               VARCHAR(100)
 );
 
 CREATE TABLE IF NOT EXISTS coach (

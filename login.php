@@ -19,15 +19,15 @@ include('includes/nav.php');
                 </div>
             <?php endif; ?>
             <form action="includes/login_inc.php" method="POST">
-                <div class="mb-3">
+                <div class="mb-5">
                     <label for="email" class="form-label">Email</label>
                     <input type="text" class="form-control" id="email" name="email">
                 </div>
-                <div class="mb-3">
+                <div class="mb-5">
                     <label for="pwd" class="form-label">Password</label>
                     <input type="password" class="form-control" id="pwd" name="pwd">
                 </div>
-                <div class="mb-3">
+                <div class="mb-5">
                     <button type="submit" class="btn btn-primary" name="login_btn">Log in</button>
                 </div>
             </form>

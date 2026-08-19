@@ -5,7 +5,7 @@
 $host = 'db';
 $dbname = 'rugby_loans';
 $user = 'Manager';
-$pass = 'example';
+$pass = 'banana111';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";

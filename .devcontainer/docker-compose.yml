@@ -15,8 +15,8 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: di4sPyros
-      MYSQL_DATABASE: anesi_db
+      MYSQL_ROOT_PASSWORD: banana111
+      MYSQL_DATABASE: rugby_loans
     ports:
       - "3306:3306"
 
@@ -28,6 +28,6 @@ services:
     environment:
       PMA_HOST: db
       PMA_PORT: 3306
-      MYSQL_ROOT_PASSWORD: di4sPyros
+      MYSQL_ROOT_PASSWORD: banana111
     volumes:
       - ./phpmyadmin-config.php:/etc/phpmyadmin/config.user.inc.php
