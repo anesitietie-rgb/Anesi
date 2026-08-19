@@ -3,7 +3,6 @@ session_start();
 require('includes/auth_check.php');
 require('includes/conn_1dt.php');
 
-<<<<<<< HEAD
 $page_title = "Manage loans | RUGBY GEAR";
 
 // Join to monitors so we can show who logged each loan.
@@ -11,15 +10,6 @@ $stmt = $pdo->query(
         "SELECT loans.*, coach_name AS logged_by_name
         FROM loans
      LEFT JOIN coach ON loans.logged_by = coach.id
-=======
-$page_title = "Manage loans | Gear Out";
-
-// Join to monitors so we can show who logged each loan.
-$stmt = $pdo->query(
-    "SELECT loans.*, monitors.firstname AS logged_by_name
-     FROM loans
-     LEFT JOIN monitors ON loans.logged_by = monitors.id
->>>>>>> dac6550cea7f9ca330b8ff5639c084f57c0426dd
      ORDER BY (returned_date IS NULL) DESC, due_back ASC"
 );
 $loans = $stmt->fetchAll();
@@ -73,20 +63,12 @@ include('includes/nav.php');
                         }
                         ?>
                         <tr class="<?= $overdue ? 'table-danger' : '' ?>">
-<<<<<<< HEAD
                             <td><?= htmlspecialchars($loan['rubgy_gears_name']) ?></td>
                             <td><?= htmlspecialchars($loan['Borrower_name']) ?></td>
                             <td><?= htmlspecialchars($loan['Borrowe_date']) ?></td>
                             <td><?= htmlspecialchars($loan['Due_back']) ?></td>
                             <td><?= $status ?></td>
                             <td><?= htmlspecialchars($loan['NOTES'] ?? '—') ?></td>
-=======
-                            <td><?= htmlspecialchars($loan['item_name']) ?></td>
-                            <td><?= htmlspecialchars($loan['borrower_name']) ?></td>
-                            <td><?= htmlspecialchars($loan['due_back']) ?></td>
-                            <td><?= $status ?></td>
-                            <td><?= htmlspecialchars($loan['logged_by_name'] ?? '—') ?></td>
->>>>>>> dac6550cea7f9ca330b8ff5639c084f57c0426dd
                             <td>
                                 <?php if (!$loan['returned_date']): ?>
                                 <a href="return_loan.php?id=<?= (int) $loan['id'] ?>">

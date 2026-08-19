@@ -9,8 +9,4 @@
   <div class="card-body">
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
-<<<<<<< HEAD
 </div>
-=======
-</div>
->>>>>>> dac6550cea7f9ca330b8ff5639c084f57c0426dd

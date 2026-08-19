@@ -30,8 +30,4 @@ if (isset($_POST['login_btn'])) {
 }
 
 header('Location: ../login.php');
-<<<<<<< HEAD
 exit;
-=======
-exit;
->>>>>>> dac6550cea7f9ca330b8ff5639c084f57c0426dd
