@@ -5,10 +5,7 @@ $page_title = "RUGBY GEAR| Home";
 // Call files
 include('includes/header.php');
 include('includes/nav.php');
-<<<<<<< HEAD
 include('includes/carousel.php');
-=======
->>>>>>> dac6550cea7f9ca330b8ff5639c084f57c0426dd
 ?>
 <!-- Start of content 1 -->
 <div class="container text-center pt-5">
