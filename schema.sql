@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS coach (
 -- Demo monitor account: manager@school.nz / password123
 -- (the hash below is a real bcrypt hash of "password123")
 INSERT INTO coach (firstname, lastname, email, password) VALUES
-    ('Alex', 'Ngata', 'manager@school.nz', 'password6767676767');
+    ('Alex', 'Ngata', 'manager@school.nz', '$2a$12$c3VcRsy/1Vurck0L7ly.yuXizwBukK3CMrx6KFBqnY1Z8oLcMlvjK');
 
 -- A few sample loans so view_loans.php / manage_loans.php show something immediately.
 INSERT INTO loans (item_name, borrower_name, borrowed_date, due_back, returned_date, logged_by) VALUES

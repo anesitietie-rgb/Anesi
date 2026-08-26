@@ -5,7 +5,7 @@
   </div>
 </div>
 <div class="card text-bg-info mb-3" style="max-width: 18rem;">
-  <hd class="card-header">Header</hd>
+  <div class="card-header">Header</div>
   <div class="card-body">
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
