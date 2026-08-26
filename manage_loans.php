@@ -7,8 +7,8 @@ $page_title = "Manage loans | RUGBY GEAR";
 
 // Join to monitors so we can show who logged each loan.
 $stmt = $pdo->query(
-        "SELECT loans.*, coach_name AS logged_by_name
-        FROM loans
+    "SELECT loans.*, coach_name AS logged_by_name
+     FROM loans
      LEFT JOIN coach ON loans.logged_by = coach.id
      ORDER BY (returned_date IS NULL) DESC, due_back ASC"
 );
@@ -46,8 +46,8 @@ include('includes/nav.php');
                         <th scope="col">Due back</th>
                         <th scope="col">Status</th>
                         <th scope="col">Logged by</th>
-                        <th scope="col">&nbsp;</th>
-                        <th scope="col">&nbsp;</th>
+                        <th scope="col">Return Action</th>
+                        <th scope="col">Delete Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -65,10 +65,9 @@ include('includes/nav.php');
                         <tr class="<?= $overdue ? 'table-danger' : '' ?>">
                             <td><?= htmlspecialchars($loan['rubgy_gears_name']) ?></td>
                             <td><?= htmlspecialchars($loan['Borrower_name']) ?></td>
-                            <td><?= htmlspecialchars($loan['Borrowe_date']) ?></td>
+                            <td><?= htmlspecialchars($loan['Borrow_date']) ?></td>
                             <td><?= htmlspecialchars($loan['Due_back']) ?></td>
                             <td><?= $status ?></td>
-                            <td><?= htmlspecialchars($loan['NOTES'] ?? '—') ?></td>
                             <td>
                                 <?php if (!$loan['returned_date']): ?>
                                 <a href="return_loan.php?id=<?= (int) $loan['id'] ?>">

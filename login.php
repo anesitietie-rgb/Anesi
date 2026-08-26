@@ -31,9 +31,9 @@ include('includes/nav.php');
                     <button type="submit" class="btn btn-primary" name="login_btn">Log in</button>
                 </div>
             </form>
-            <p class="text-muted">Manager account:</p>
+            <p class="text-muted">Manager account: manager@gmail.com</p>
         </div>
-        <div class="col-sm-3">manager@gmail.com</div>
+        <div class="col-sm-3"></div>
     </div>
 </div>
 <?php include('includes/footer.php'); ?>

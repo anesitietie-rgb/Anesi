@@ -7,9 +7,9 @@ include('includes/nav.php');
 <!-- Start of content 1 -->
 <div class="container pt-2">
     <div class="row">
-        <h1 class="text-center">RUGBY GEAR</h1>
+        <h1 class="text-center">Gears Info</h1>
         <hr />
-        <h3 class="pt-5">HOW IS RUGBY GEAR HELPPING</h3>
+        <h3 class="pt-5">HOW IS RUGBY GEAR HELPING</h3>
         <p>
             There was a school that had a great rugby team known as Mafana College. This school has seems to lose
             there gears every year due to people talking them and forgetting to returned it. RUGBY GEAR has helped

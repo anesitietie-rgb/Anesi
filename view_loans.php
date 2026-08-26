@@ -1,7 +1,8 @@
 <?php
 session_start();
-$page_title = "Current loans | Gear Out";
+$page_title = "Current loans | RUGBY GEAR";
 require('includes/conn_1dt.php');
+require('includes/index.php');
 
 // Anyone can see this page — no auth_check here. Only logging or
 // returning a loan requires being signed in.

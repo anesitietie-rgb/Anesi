@@ -4,7 +4,7 @@ require('includes/auth_check.php');
 require('includes/conn_1dt.php');
 
 // The uploaded admin_delete.php built its query as
-// "DELETE FROM admin_tbl WHERE id = $admin_id" — mysqli_real_escape_string()
+// "DELETE FROM admin_tbl WHERE id = $admin_id" - mysqli_real_escape_string()
 // on $admin_id doesn't actually protect an unquoted numeric value dropped
 // straight into the SQL string. Casting to (int) and using a bound
 // parameter here closes that off properly.
