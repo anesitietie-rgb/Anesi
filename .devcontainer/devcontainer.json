@@ -1,6 +1,6 @@
 {
     "name": "RUGBY GEAR",
-    "dockerComposeFile": "../docker-compose.yml",
+    "dockerComposeFile": "docker-compose.yml",
     "service": "web",
     "workspaceFolder": "/var/www/html",
     "forwardPorts": [8080, 8081, 3306],
