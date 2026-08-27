@@ -38,7 +38,7 @@ include('includes/nav.php');
                         <?php foreach ($loans as $loan): ?>
                             <?php $overdue = $loan['due_back'] < $today; ?>
                             <tr class="<?= $overdue ? 'table-danger' : '' ?>">
-                                <td><?= htmlspecialchars($loan['item_name']) ?></td>
+                                <td><?= htmlspecialchars($loan['rugby_gears_name']) ?></td>
                                 <td><?= htmlspecialchars($loan['borrower_name']) ?></td>
                                 <td><?= htmlspecialchars($loan['due_back']) ?></td>
                                 <td>
