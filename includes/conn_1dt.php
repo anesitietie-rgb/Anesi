@@ -4,7 +4,7 @@
 // but built with PDO + prepared statements throughout the rest of the site.
 $host = 'db';
 $dbname = 'rugby_loans';
-$user = 'Manager';
+$user = 'root';
 $pass = 'banana111';
 $charset = 'utf8mb4';
 
