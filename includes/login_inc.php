@@ -19,8 +19,7 @@ if (isset($_POST['login_btn'])) {
     // stored in the database — the plain password is never stored or compared directly.
     if ($manager && password_verify($pwd, $manager['password'])) {
         $_SESSION['id']        = $manager['id'];
-        $_SESSION['firstname'] = $manager['firstname'];
-        $_SESSION['lastname']  = $manager['lastname'];
+        $_SESSION['firstname'] = $manager['coach_name'];
         header('Location: ../control_panel.php');
         exit;
     }
