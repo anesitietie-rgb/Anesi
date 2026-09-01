@@ -9,7 +9,7 @@ $page_title = "Manage loans | RUGBY GEAR";
 $stmt = $pdo->query(
     "SELECT loans.*, coach_name AS logged_by_name
      FROM loans
-     LEFT JOIN coach ON loans.logged_by = coach.id
+     LEFT JOIN manager ON loans.logged_by = coach.id
      ORDER BY (returned_date IS NULL) DESC, due_back ASC"
 );
 $loans = $stmt->fetchAll();
