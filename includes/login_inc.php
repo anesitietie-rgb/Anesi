@@ -11,7 +11,7 @@ if (isset($_POST['login_btn'])) {
         exit;
     }
 
-    $stmt = $pdo->prepare("SELECT * FROM manager WHERE email = :email");
+    $stmt = $pdo->prepare("SELECT * FROM manager WHERE coach_email = :email");
     $stmt->execute([':email' => $email]);
     $manager = $stmt->fetch();
 
