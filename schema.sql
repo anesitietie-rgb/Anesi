@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS manager (
 
 -- Demo monitor account: manager@school.nz / password123
 -- (the hash below is a real bcrypt hash of "password123")
-INSERT INTO manager (coach_name, coach_email, coach_height, phone_number, password) VALUES
+INSERT INTO manager (coach_name, coach_email, coach_height_cm, phone_number, password) VALUES
     ('Alex', 'manager@school.nz', '023554978', '187', '$2a$12$c3VcRsy/1Vurck0L7ly.yuXizwBukK3CMrx6KFBqnY1Z8oLcMlvjK');
 
 -- A few sample loans so view_loans.php / manage_loans.php show something immediately.
