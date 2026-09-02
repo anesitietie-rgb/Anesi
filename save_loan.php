@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-$item     = trim($_POST['rugby_gears_name'] ?? '');
+$item     = trim($_POST['item_name'] ?? '');
 $borrower = trim($_POST['borrower_name'] ?? '');
 $due      = $_POST['due_back'] ?? '';
 $today    = date('Y-m-d');
