@@ -64,10 +64,11 @@ include('includes/nav.php');
                         ?>
                         <tr class="<?= $overdue ? 'table-danger' : '' ?>">
                             <td><?= htmlspecialchars($loan['rubgy_gears_name']) ?></td>
-                            <td><?= htmlspecialchars($loan['Borrower_name']) ?></td>
+                            <td><?= htmlspecialchars($loan['borrower_name']) ?></td>
                             <td><?= htmlspecialchars($loan['Borrow_date']) ?></td>
-                            <td><?= htmlspecialchars($loan['Due_back']) ?></td>
+                            <td><?= htmlspecialchars($loan['due_back']) ?></td>
                             <td><?= $status ?></td>
+                            <td><?= htmlspecialchars($loan['logged_by_name'] ?? 'System') ?></td>  
                             <td>
                                 <?php if (!$loan['returned_date']): ?>
                                 <a href="return_loan.php?id=<?= (int) $loan['id'] ?>">
