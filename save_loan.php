@@ -31,7 +31,7 @@ if ($errors) {
     exit;
 }
 
-$sql = "INSERT INTO loans (item_name, borrower_name, Borrow_date, due_back, logged_by)
+$sql = "INSERT INTO loans (rugby_gears_name, borrower_name, Borrow_date, due_back, logged_by)
         VALUES (:item, :borrower, :borrowed, :due, :logged_by)";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([
