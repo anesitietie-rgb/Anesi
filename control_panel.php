@@ -12,7 +12,7 @@ include('includes/nav.php');
 
 
 <p class="text-end me-5 mt-2 fs-4">
-    Signed in: <?= htmlspecialchars(($_SESSION['firstname'] ?? ''); ?>
+    Signed in: <?= htmlspecialchars($_SESSION['firstname'] ?? ''); ?>
 </p>
 
 <!-- Start of content one -->
