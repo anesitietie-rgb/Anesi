@@ -65,7 +65,6 @@ include('includes/nav.php');
                         <tr class="<?= $overdue ? 'table-danger' : '' ?>">
                             <td><?= htmlspecialchars($loan['rugby_gears_name']) ?></td>
                             <td><?= htmlspecialchars($loan['borrower_name']) ?></td>
-                            <td><?= htmlspecialchars($loan['Borrow_date']) ?></td>
                             <td><?= htmlspecialchars($loan['due_back']) ?></td>
                             <td><?= $status ?></td>
                             <td><?= htmlspecialchars($loan['logged_by_name'] ?? 'System') ?></td>  
