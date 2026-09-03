@@ -9,8 +9,8 @@ CREATE TABLE IF NOT EXISTS loans (
     due_back            DATE,
     returned_date       DATE         NULL, 
     logged_by       INT              NULL, 
-    NOTES               VARCHAR(100)
-    FOREIGN KEY (logged_by) REFERENCES Manager(id)
+    NOTES               VARCHAR(100),
+    FOREIGN KEY (logged_by) REFERENCES manager(id)
 );
 
 CREATE TABLE IF NOT EXISTS manager (
