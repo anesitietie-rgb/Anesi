@@ -1,4 +1,4 @@
- {
+{
     "name": "RUGBY GEAR",
     "dockerComposeFile": "../docker-compose.yml",
     "service": "web",
