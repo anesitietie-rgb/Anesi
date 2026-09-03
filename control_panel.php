@@ -4,7 +4,7 @@ require('includes/auth_check.php');
 
 // Declare page title variable
 $page_title = "Control Panel | RUGBY GEAR";
-.:/var/www/html
+
 // Call header and navigation files
 include('includes/header.php');
 include('includes/nav.php');
