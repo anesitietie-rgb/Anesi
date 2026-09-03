@@ -1,4 +1,5 @@
 version: '3.8'
+
 services:
   web:
     image: php:8.2-apache
@@ -7,7 +8,7 @@ services:
     ports:
       - "8080:80"
     command: >
-      sh -c "docker-php-ext-install mysqli &&
+      sh -c "docker-php-ext-install pdo pdo_mysql mysqli &&
       chown -R www-data:www-data /var/www/html &&
       apache2-foreground"
 
@@ -19,6 +20,8 @@ services:
       MYSQL_DATABASE: rugby_loans
     ports:
       - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -31,3 +34,6 @@ services:
       MYSQL_ROOT_PASSWORD: banana111
     volumes:
       - ./phpmyadmin-config.php:/etc/phpmyadmin/config.user.inc.php
+
+volumes:
+  db_data:
