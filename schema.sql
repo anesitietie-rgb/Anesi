@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS manager (
     coach_email     VARCHAR(50)  NOT NULL UNIQUE,
     phone_number    INT(50)      NOT NULL,
     coach_height_cm INT(10)          NULL, 
-    password        VARCHAR(255) NOT NULL,     
+    password        VARCHAR(255) NOT NULL     
 );
 
 -- Demo monitor account: manager@school.nz / password123
