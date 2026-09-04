@@ -1,5 +1,5 @@
 <?php
-// Database connection for Gear Out — PDO, not mysqli.
+// Database connection for RUGBY GEAR — PDO, not mysqli.
 // Named to match the class template convention (conn_1dt.php),
 // but built with PDO + prepared statements throughout the rest of the site.
 $host = 'db';
