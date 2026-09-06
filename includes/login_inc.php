@@ -17,7 +17,7 @@ if (isset($_POST['login_btn'])) {
 
     // password_verify checks the submitted password against the hash
     // stored in the database — the plain password is never stored or compared directly.
-    if ($manager && password_verify($pwd, $manager['password'])) {
+    if ($manager && password_verify($pwd, $manager['pasword67'])) {
         $_SESSION['id']        = $manager['id'];
         $_SESSION['firstname'] = $manager['coach_name'];
         header('Location: ../control_panel.php');
