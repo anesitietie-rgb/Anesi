@@ -31,7 +31,7 @@ include('includes/nav.php');
                     <button type="submit" class="btn btn-primary" name="login_btn">Log in</button>
                 </div>
             </form>
-            <p class="text-muted">Manager account: manager@gmail.com</p>
+            <p class="text-muted">Manager account: manager@school.nz</p>
         </div>
         <div class="col-sm-3"></div>
     </div>
